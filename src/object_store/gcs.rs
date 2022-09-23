@@ -8,10 +8,10 @@ use async_trait::async_trait;
 use bytes::Buf;
 use futures::{stream, AsyncRead, StreamExt};
 
-use datafusion_data_access::object_store::{
+use datafusion::datafusion_data_access::object_store::{
     FileMetaStream, ListEntryStream, ObjectReader, ObjectStore,
 };
-use datafusion_data_access::{FileMeta, Result, SizedFile};
+use datafusion::datafusion_data_access::{FileMeta, Result, SizedFile};
 
 use cloud_storage::client::Client;
 
